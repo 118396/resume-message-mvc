@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<head>
+    <title>我的网页</title>
+    <script src="//at.alicdn.com/t/font_600401_ljrl1sigllv50zfr.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div id="topNavBar" class="topNavBar">
+        <div class="topNavBar-inner clearfix">
+            <a class="logo" href="#" alt="logo" style="float:left;">
+                <span class="rs">RS</span>
+                <span class="card">card</span>
+            </a>
+            <nav class="menu" style="float:right;">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#siteAbout">关于</a>
+                    </li>
+                    <li>
+                        <a href="#siteSkills">技能</a>
+                    </li>
+                    <li>
+                        <a href="#siteWorks">作品</a>
+                        <ul class="submenu">
+                            <li>作品1</li>
+                            <li>作品2</li>
+                            <li>作品3</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">博客</a>
+                        <ul class="submenu">
+                            <li>博客1</li>
+                            <li>博客2</li>
+                            <li>博客3</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">日历</a>
+                    </li>
+                    <li>
+                        <a href="#">联系方式</a>
+                    </li>
+                    <li>
+                        <a href="#">其他</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="mask"></div>
+    </div>
+    <main>
+
+
+        <div date-x id="siteAbout" class="UserCard">
+            <div class="PictureAadText clearfix">
+                <div class="pirture">
+                    <img src="./img/avatar.jpg" width=299 height=347 alt="头像">
+                </div>
+                <div class="text">
+                    <span class="welcome">Hello
+                        <span class="triangle"></span>
+                    </span>
+                    <h1>韦虎</h1>
+                    <p>前端开发工程师</p>
+                    <hr>
+                    <dl>
+                        <dt>年龄</dt>
+                        <dd>24</dd>
+                        <dt>所在城市</dt>
+                        <dd>武汉</dd>
+                        <dt>邮箱</dt>
+                        <dd>1183969348@qq.com</dd>
+                        <dt>手机</dt>
+                        <dd>xxxxxxxxxx</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <footer class="media">
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-CN_jianshu"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-twitter"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weibo"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-zhihu"></use>
+                    </svg>
+                </a>
+
+            </footer>
+        </div>
+        <p class="downloadResume-wrapper">
+            <a class="downloadResume" href="./resume.pdf" target="_blahk" download>下载 PDF 简历</a>
+        </p>
+        <p class="selfintroduction">
+            韦虎， 前端工程师，现在在 饥人谷 学习前端课程。
+            <br> 技能：正在学习
+        </p>
+    </main>
+    <section date-x id="siteSkills" class="skills">
+        <h2>技能</h2>
+        <ol class="clearfix">
+            <li>
+                <h3>
+                    HTML 5 &amp; CSS3
+                </h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 10%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>
+                    JavaScript
+                </h3>
+                <div class="progressBar">
+                    <div class="progress" style="width:20%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>
+                    jQuery
+                </h3>
+                <div class="progressBar">
+                    <div class="progress" style="width:30%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>
+                    Vue
+                </h3>
+                <div class="progressBar">
+                    <div class="progress" style="width:40%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>
+                    React
+                </h3>
+                <div class="progressBar">
+                    <div class="progress" style="width:50%"></div>
+                </div>
+            </li>
+
+            <li>
+                <h3>
+                    HTTP
+                </h3>
+                <div class="progressBar">
+                    <div class="progress" style="width:60%"></div>
+                </div>
+            </li>
+        </ol>
+    </section>
+    <section date-x class="portfolio" id="siteWorks">
+        <h2>作品集</h2>
+        <!-- 这就是  view，用户看的见的东西 -->
+        <!-- Slider main container -->
+        <div id="mySlides">
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <img src="./img/works/nav-page.jpg" class="swiper-slide">
+                <img src="./img/works/canvas.jpg" class="swiper-slide">
+                <img src="./img/works/apple-style-slides.jpg" class="swiper-slide">
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        </div>
+
+    </section>
+    <section class="message">
+        <h2>留言</h2>
+        <ol id="messageList">
+        </ol>
+        <form id="postMessageForm" style="width: 700px; margin: 50px auto">
+            <label for="">姓名</label>
+            <input type="text" name="name">
+            <label for="">内容</label>
+            <input type="text" name="content">
+            <input type="submit" value="提交">
+        </form>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.7.3/dist/av-min.js"></script>
+    <!-- 模块化 -->
+    <script src="./js/auto-slide-up.js"></script>
+    <script src="./js/init-swiper.js"></script>
+    <script src="./js/smoothly-navigation.js"></script>
+    <script src="./js/sticky-topbar.js"></script>
+    <script src="./js/message.js"></script>
+</body>
+
+</html>
